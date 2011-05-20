@@ -1,15 +1,15 @@
+stylesheets[all][] = styles/h2.css
 name = Ninesixty subtheme
-description = A empty subtheme of the ninesixty cssframework. Its setup with a fronpage with  header-3col-tagline-2col-3col-footer(4col) layout. Other pages have header, sidebar left(2cols), content(8-12cols), sidebar right(2cols)-footer(4col) Made by per@oja.no.
+description = A empty subtheme of the ninesixty cssframework. Its setup with a fronpage with  header-3col-tagline-2col-3col-footer(4col) layout. Other pages have header, sidebar left(2cols), content(8-12cols), sidebar right(2cols)-footer(4col) Made by per@oja.no. 
 base theme = ninesixty
-stylesheets[all][]   = styles/*
 version = 1.0
 core = 7.x
 engine = phptemplate
-
 regions[header] = Header
 regions[help] = Help
 regions[highlighted] = Highlighted
 regions[featured] = Featured
+regions[search_box] = Search Box
 regions[content] = Content
 regions[sidebar_first] = Sidebar first
 regions[sidebar_second] = Sidebar second
