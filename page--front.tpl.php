@@ -2,7 +2,6 @@
 // $Id: page.tpl.php,v 1.1.2.2.4.2 2011/01/11 01:08:49 dvessel Exp $
 ?>
 <div id="page" class="container-16 clearfix">
-
   <div id="site-header" class="clearfix">
     <div id="branding" class="grid-4 clearfix">
     <?php if ($linked_logo_img): ?>
@@ -22,11 +21,7 @@
       <?php print $secondary_menu_links; ?>
     </div>
   <?php endif; ?>
-
-  <?php if ($page['search_box']): ?>
-    <div id="search-box" class="grid-6 prefix-10"><?php print render($page['search_box']); ?></div>
-  <?php endif; ?>
-  </div>
+  </div> <?#END SITE HEADER?>
 
   <div id="site-subheader" class="prefix-1 suffix-1 clearfix">
   <?php if ($page['highlighted']): ?>
@@ -43,7 +38,7 @@
   </div>
 
 
-  <div id="main" class="column <?php print ns('grid-16', $page['sidebar_first'], 4, $page['sidebar_second'], 3) . ' ' . ns('push-4', !$page['sidebar_first'], 4); ?>">
+  <div id="main">
     <?php print $breadcrumb; ?>
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
@@ -84,4 +79,55 @@
     <?php endif; ?>
   </div>
 
-</div><h1>TEST</h1>
+</div>
+<!-- front-page-layout-->
+<div class="container_12 header" style="padding:0">  
+  <div class="grid-2"><div class=""><img src="ematch-logo-standing.png"></div></div>  
+  <div class="grid-10 headerbox"><div class="">Initiating Innovation!</div></div>  
+    <div class="clear"></div>  
+</div>
+
+<div class="container_12 " style="padding:0">  
+  <div class="grid-12 "> <div class="tagline">  International Profiling & Project Matchmaking in the ICT and Digital Media Sector
+  </div></div>  
+    <div class="clear"></div>  
+  
+    <div class="grid-12 "><div class=""><h2>Menyer?</h2></div></div>  
+    <div class="clear"></div>  
+
+    <div class="grid-4 triptych_first">
+      <?php print render($page['triptych_first']); ?>    
+    </div>  
+    <div class="grid-4 triptych_middle">
+      <?php print render($page['triptych_middle']); ?>    
+    </div>  
+    <div class="grid-4 triptych_last">
+      <?php print render($page['triptych_last']); ?>    
+    </div>  
+    <div class="clear"></div>  
+</div>
+
+<div class="container_12 magebelte" style="padding:0">  
+    <div class="grid-6"></div>  
+    <div class="grid-6"></div>  
+     <div class="clear"></div>  
+
+    <div class="grid-12 "></div>  
+    <div class="clear"></div>  
+
+    <div class="grid-3"></div>  
+    <div class="grid-3"></div>  
+    <div class="grid-3"></div>  
+    <div class="grid-3"></div>  
+    <div class="clear"></div>  
+
+  
+    <div class="grid-12 "></div>  
+    <div class="clear"></div>  
+  
+
+    <div class="grid-12 center footer"><p>Coordinated by <a href="http://www.infosector.no">Infosector AS</a><br>Storgata 3, Postboks 44 Sentrum, 0101 Oslo, Norway<br>
+    <a href="mailto:mail@infosector.no">mail@infosector.no</a>, Org. No: 971049707</p></div></div>  
+    <div class="clear"> &nbsp;</div>  
+  
+</div>
