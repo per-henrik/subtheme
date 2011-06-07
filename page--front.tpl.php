@@ -37,25 +37,6 @@
   <?php endif; ?>
   </div>
 
-  <div id="main">
-    <?php print $breadcrumb; ?>
-    <?php print render($title_prefix); ?>
-    <?php if ($title): ?>
-      <h1 class="title" id="page-title"><?php print $title; ?></h1>
-    <?php endif; ?>
-    <?php print render($title_suffix); ?>      
-    <?php if ($tabs): ?>
-      <div class="tabs"><?php print render($tabs); ?></div>
-    <?php endif; ?>
-    <?php print $messages; ?>
-    <?php print render($page['help']); ?>
-
-    <div id="main-content" class="region clearfix">
-      <?php print render($page['content']); ?>
-    </div>
-
-    <?php print $feed_icons; ?>
-  </div>
 
 <?php if ($page['sidebar_left']): ?>
   <div id="sidebar-left" class="column sidebar region grid-4 <?php print ns('pull-12', $page['sidebar_left'], 3); ?>">
@@ -70,13 +51,6 @@
 <?php endif; ?>
 
 
-  <div id="footer" class="prefix-1 suffix-1">
-    <?php if ($page['footer']): ?>
-      <div id="footer-region" class="region grid-14 clearfix">
-        <?php print render($page['footer']); ?>
-      </div>
-    <?php endif; ?>
-  </div>
 
 </div>
 <!-- front-page-layout-->
@@ -95,13 +69,13 @@
     <div class="clear"></div>  
 
     <div class="grid-4 triptych_first">
-      <?php print render($page['triptych_first']); ?>  triptych_first  
+      <?php print render($page['triptych_first']); ?>
     </div>  
     <div class="grid-4 triptych_middle">
-      <?php print render($page['triptych_middle']); ?>  triptych_middle  
+      <?php print render($page['triptych_middle']); ?>
     </div>  
     <div class="grid-4 triptych_last">
-      <?php print render($page['triptych_last']); ?>  triptych_last  
+      <?php print render($page['triptych_last']); ?>
     </div>  
     <div class="clear"></div>  
 </div>
@@ -124,9 +98,26 @@
     <div class="grid-12 "></div>  
     <div class="clear"></div>  
   
+      <?php print $messages; ?>
+      <?php print render($page['help']); ?>
 
-    <div class="grid-12 center footer"><p>Coordinated by <a href="http://www.infosector.no">Infosector AS</a><br>Storgata 3, Postboks 44 Sentrum, 0101 Oslo, Norway<br>
-    <a href="mailto:mail@infosector.no">mail@infosector.no</a>, Org. No: 971049707</p></div></div>  
+      <?php print $feed_icons; ?>
+    </div>
+    <div class="clear"></div>  
+    
+
+    <div class="grid-12 center footer">  
+      <div id="footer" class="prefix-1 suffix-1">
+        <?php if ($page['footer']): ?>
+          <div id="footer-region" class="region grid-14 clearfix">
+            <?php print render($page['footer']); ?>
+          </div>
+        <?php endif; ?>
+      </div>
+    </div>
+    
     <div class="clear"> &nbsp;</div>  
   
+
+
 </div>

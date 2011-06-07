@@ -15,10 +15,15 @@ regions[featured] = Featured
 regions[sidebar_left] = Sidebar left
 regions[content] = Content
 regions[sidebar_right] = Sidebar right
-ragions[belte] = Belte
-regions[triptych_first] = Triptych first
-regions[triptych_middle] = Triptych middle
-regions[triptych_last] = Triptych last
+
+regions[triptych_first] = Triptych first (Frontpage)
+regions[triptych_middle] = Triptych middle (Frontpage)
+regions[triptych_last] = Triptych last (Frontpage)
+
+regions[belte] = Belte
+regions[belte_left] = Belte left (Frontpage)
+regions[belte_right] = Belte right (Frontpage)
+
 
 regions[footer_first_column] = Footer first column
 regions[footer_second_column] = Footer second column
@@ -27,11 +32,6 @@ regions[footer_fourth_column] = Footer fourth column
 
 regions[footer] = Footer
 
-; Frontpage
-regions[front_top_left] = Front Top Left
-regions[front_top_midle] = Front Top Midle
-regions[front_top_right] = Front Top Right
-regions[front_center_left] = Front Center Left
-regions[front_center_right] = Front Center Right
+
 
 
