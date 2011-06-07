@@ -37,7 +37,6 @@
   <?php endif; ?>
   </div>
 
-
   <div id="main">
     <?php print $breadcrumb; ?>
     <?php print render($title_prefix); ?>
@@ -58,15 +57,15 @@
     <?php print $feed_icons; ?>
   </div>
 
-<?php if ($page['sidebar_first']): ?>
-  <div id="sidebar-left" class="column sidebar region grid-4 <?php print ns('pull-12', $page['sidebar_second'], 3); ?>">
-    <?php print render($page['sidebar_first']); ?>
+<?php if ($page['sidebar_left']): ?>
+  <div id="sidebar-left" class="column sidebar region grid-4 <?php print ns('pull-12', $page['sidebar_left'], 3); ?>">
+    <?php print render($page['sidebar_left']); ?>
   </div>
 <?php endif; ?>
 
-<?php if ($page['sidebar_second']): ?>
+<?php if ($page['sidebar_right']): ?>
   <div id="sidebar-right" class="column sidebar region grid-3">
-    <?php print render($page['sidebar_second']); ?>
+    <?php print render($page['sidebar_right']); ?>
   </div>
 <?php endif; ?>
 
@@ -81,13 +80,13 @@
 
 </div>
 <!-- front-page-layout-->
-<div class="container_12 header" style="padding:0">  
+<div class="container-12 header" style="padding:0">  
   <div class="grid-2"><div class=""><img src="ematch-logo-standing.png"></div></div>  
   <div class="grid-10 headerbox"><div class="">Initiating Innovation!</div></div>  
     <div class="clear"></div>  
 </div>
 
-<div class="container_12 " style="padding:0">  
+<div class="container-12 " style="padding:0">  
   <div class="grid-12 "> <div class="tagline">  International Profiling & Project Matchmaking in the ICT and Digital Media Sector
   </div></div>  
     <div class="clear"></div>  
@@ -96,18 +95,18 @@
     <div class="clear"></div>  
 
     <div class="grid-4 triptych_first">
-      <?php print render($page['triptych_first']); ?>    
+      <?php print render($page['triptych_first']); ?>  triptych_first  
     </div>  
     <div class="grid-4 triptych_middle">
-      <?php print render($page['triptych_middle']); ?>    
+      <?php print render($page['triptych_middle']); ?>  triptych_middle  
     </div>  
     <div class="grid-4 triptych_last">
-      <?php print render($page['triptych_last']); ?>    
+      <?php print render($page['triptych_last']); ?>  triptych_last  
     </div>  
     <div class="clear"></div>  
 </div>
 
-<div class="container_12 magebelte" style="padding:0">  
+<div class="container-12 magebelte" style="padding:0">  
     <div class="grid-6"></div>  
     <div class="grid-6"></div>  
      <div class="clear"></div>  
